@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li>
+      <app-item *ngFor="let item of list" [item]="item" (deleteItem)="deleteItem($event)"></app-item>
+    </li>
+  </ul>
+</div>
+
+<app-add-item (addItem)="addNew($event)"></app-add-item>
